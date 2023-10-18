@@ -53,24 +53,10 @@ for (let i = 0; i < datiMembri.length; i++) {
 
     console.log(membroCorrente.nome, membroCorrente.ruolo, membroCorrente.linkImg)
 
-    containerDOMElement.innerHTML += '<div class="card"></div> '
+    containerDOMElement.innerHTML += `<div class="card">
+    <img src="./img/${membroCorrente.linkImg}"> 
+    <p class="name">${membroCorrente.nome}</p> 
+    <p class="role">${membroCorrente.ruolo}</p> 
+    </div>`
 
-}
-
-// - Richiamare un elemento dal DOM tramite id o classe
-// - Stampare con un ciclo i dati dei membri nell'HTML
-
-const cardDOMElements = document.querySelectorAll('.card');
-
-for (let i = 0; i < datiMembri.length; i++) {
-
-    const membroCorrente = datiMembri[i]
-
-    console.log(membroCorrente.nome, membroCorrente.ruolo, membroCorrente.linkImg)
-
-    cardDOMElements[i].innerHTML += `<img src="./img/${membroCorrente.linkImg}"> `
-
-    cardDOMElements[i].innerHTML += `<p class="name">${membroCorrente.nome}</p>`
-
-    cardDOMElements[i].innerHTML += `<p class="role">${membroCorrente.ruolo}</p>`
 }
