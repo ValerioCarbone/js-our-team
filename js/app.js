@@ -70,7 +70,7 @@ for (let i = 0; i < datiMembri.length; i++) {
 
     cardDOMElements[i].innerHTML += `<img src="./img/${membroCorrente.linkImg}"> ` 
     
-    cardDOMElements[i].innerHTML += `<p>${membroCorrente.nome}</p>`
+    cardDOMElements[i].innerHTML += `<p class="name">${membroCorrente.nome}</p>`
     
-    cardDOMElements[i].innerHTML += `<p>${membroCorrente.ruolo}</p>`
+    cardDOMElements[i].innerHTML += `<p class="role">${membroCorrente.ruolo}</p>`
 }
