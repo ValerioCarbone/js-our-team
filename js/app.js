@@ -29,17 +29,25 @@ const datiMembri = [
         ruolo: 'Social Media Manager',
         linkImg: 'angela-lopez-social-media-manager.jpg',
     },
-    
+
     {
         nome: 'Scott Estrada',
         ruolo: 'Developer',
         linkImg: 'scott-estrada-developer.jpg',
     },
-    
+
     {
         nome: 'Barbara Ramos',
         ruolo: 'Graphic Designer',
         linkImg: 'barbara-ramos-graphic-designer.jpg',
     },
-    
+
 ]
+
+for (let i = 0; i < datiMembri.length; i++) {
+    
+    const membroCorrente = datiMembri[i]
+
+    console.log(membroCorrente.nome, membroCorrente.ruolo, membroCorrente.linkImg)
+
+}
