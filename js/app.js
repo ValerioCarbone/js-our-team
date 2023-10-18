@@ -4,3 +4,42 @@
 // - Stampare con un ciclo i dati dei membri nell'HTML
 // - Creare un layout con una card di ogni singolo membro
 // - Trasformare le stringhe delle foto in immagini effettive
+
+const datiMembri = [
+    {
+        nome: 'Wayne Barnett',
+        ruolo: 'Founder & CEO',
+        linkImg: 'wayne-barnett-founder-ceo.jpg'
+    },
+
+    {
+        nome: 'Angela Caroll',
+        ruolo: 'Chief Editor',
+        linkImg: 'angela-caroll-chief-editor.jpg'
+    },
+
+    {
+        nome: 'Walter Gordon',
+        ruolo: 'Office Manager',
+        linkImg: 'walter-gordon-office-manager.jpg',
+    },
+
+    {
+        nome: 'Angela Lopez',
+        ruolo: 'Social Media Manager',
+        linkImg: 'angela-lopez-social-media-manager.jpg',
+    },
+    
+    {
+        nome: 'Scott Estrada',
+        ruolo: 'Developer',
+        linkImg: 'scott-estrada-developer.jpg',
+    },
+    
+    {
+        nome: 'Barbara Ramos',
+        ruolo: 'Graphic Designer',
+        linkImg: 'barbara-ramos-graphic-designer.jpg',
+    },
+    
+]
