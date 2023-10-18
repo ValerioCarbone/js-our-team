@@ -1,7 +1,5 @@
 // - Creiamo un array il cui contenuto sono i dati forniti di ogni membro racchiusi in uno oggetto
-// - Stampare con un ciclo for in i dati di ogni membro(compresa la strigna della foto)
-// - Richiamare un elemento dal DOM tramite id o classe
-// - Stampare con un ciclo i dati dei membri nell'HTML
+
 // - Creare un layout con una card di ogni singolo membro
 // - Trasformare le stringhe delle foto in immagini effettive
 
@@ -44,10 +42,35 @@ const datiMembri = [
 
 ]
 
+// - Stampare con un ciclo for in i dati di ogni membro(compresa la strigna della foto)
+
+
+const containerDOMElement = document.querySelector('.container')
+
 for (let i = 0; i < datiMembri.length; i++) {
     
     const membroCorrente = datiMembri[i]
 
     console.log(membroCorrente.nome, membroCorrente.ruolo, membroCorrente.linkImg)
 
+    containerDOMElement.innerHTML += '<div class="card"></div> ' 
+
+}
+
+// - Richiamare un elemento dal DOM tramite id o classe
+// - Stampare con un ciclo i dati dei membri nell'HTML
+
+const cardDOMElements = document.querySelectorAll('.card')
+
+for (let i = 0; i < datiMembri.length; i++) {
+    
+    const membroCorrente = datiMembri[i]
+
+    console.log(membroCorrente.nome, membroCorrente.ruolo, membroCorrente.linkImg)
+
+    cardDOMElements[i].innerHTML += `<img src="./img/${membroCorrente.linkImg}"> ` 
+    
+    cardDOMElements[i].innerHTML += `<p>${membroCorrente.nome}</p>`
+    
+    cardDOMElements[i].innerHTML += `<p>${membroCorrente.ruolo}</p>`
 }
